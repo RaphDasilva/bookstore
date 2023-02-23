@@ -1,9 +1,9 @@
 import React from 'react';
 
 const Categories = () => (
-    <div>
+  <div>
     <button className="categoryButton" type="button">Check Status</button>
-    </div>
+  </div>
 );
 
 export default Categories;
