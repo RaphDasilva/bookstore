@@ -31,9 +31,9 @@
 
 **[Bookstore]**  The Bookstore is a website similar to the "Awesome Books" website built in the previous module that allows users to:
 
-[x] Display a list of books
-[x] Add a book
-[x] Remove a selected book
+- Display a list of books
+- Add a book
+- Remove a selected book
 
 ## 🛠 Built With <a name="built-with"></a>
 
