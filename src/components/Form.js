@@ -1,20 +1,53 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { addBook } from '../redux/books/booksSlice';
 
-const Form = () => (
-  <div className="formBox">
-    <form>
-      <input className="titleInput" type="text" placeholder="Title" />
-      <select className="authorSelect">
-        <option className="author" value="author-list">Select Author</option>
-        <option className="author" value="J.R Tolkein">J.R Tolkein</option>
-        <option className="author" value="Adeyemi">Adeyemi</option>
-        <option className="author" value="Chimamanda Adichie">Chimamanda Adichie</option>
-      </select>
-      <button type="button" className="formButton">
-        Add Book
-      </button>
-    </form>
-  </div>
-);
+const Form = () => {
+  const dispatch = useDispatch();
+  const [title, setTitle] = useState('');
+  const [author, setAuthor] = useState('');
+  const onSetTitle = (event) => {
+    setTitle(event.target.value);
+  };
+  const onSetAuthor = (event) => {
+    setAuthor(event.target.value);
+  };
+
+  const onFormSubmit = (e) => {
+    e.preventDefault();
+    dispatch(
+      addBook({
+        title,
+        author,
+      }),
+    );
+
+    setTitle('');
+    setAuthor('');
+  };
+
+  return (
+    <div className="formBox">
+      <form onSubmit={onFormSubmit}>
+        <input
+          className="titleInput"
+          type="text"
+          placeholder="Title"
+          value={title}
+          onChange={onSetTitle}
+          required
+        />
+        <input
+          type="text"
+          value={author}
+          onChange={onSetAuthor}
+          placeholder="Book author.."
+          required
+        />
+        <button type="submit">ADD BOOK</button>
+      </form>
+    </div>
+  );
+};
 
 export default Form;
