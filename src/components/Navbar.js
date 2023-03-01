@@ -6,7 +6,7 @@ const Nav = () => (
     <h1>Bookstore CMC</h1>
     <nav>
       <Link to="/">Books</Link>
-      <Link to="/categories">Calculator</Link>
+      <Link to="/categories">Categories</Link>
     </nav>
   </header>
 );
