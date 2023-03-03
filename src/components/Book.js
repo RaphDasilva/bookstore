@@ -31,7 +31,9 @@ const Book = (props) => {
 
       </div>
       <div className={style.others}>
-        <div className={style.Oval} />
+        <div className={style.ovalContainer}>
+          <div className={style.Oval} />
+        </div>
         <div>
           <div className={style.percentComplete}>64%</div>
           <div className={style.completed}>Completed</div>
