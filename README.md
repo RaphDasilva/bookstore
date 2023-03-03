@@ -29,7 +29,7 @@
 
 # 📖 [Bookstore] <a name="about-project"></a>
 
-**[Bookstore]**  The Bookstore is a website similar to the "Awesome Books" website built in the previous module that allows users to:
+**[Bookstore]**  This application is a Bookstore that was developed using React and Redux. It leverages RTK Query, specifically the createAsyncThunk package from @redux/toolkit, to facilitate API calls, it allows users to:
 
 - Display a list of books
 - Add a book
@@ -85,7 +85,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Coming soon]
+- [Live Demo](https://book-store-h2u1.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
