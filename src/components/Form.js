@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import { booksActions, postBook } from '../redux/books/booksSlice';
+import Style from '../style/Form.module.css';
 
 const Form = () => {
   const dispatch = useDispatch();
@@ -34,10 +35,13 @@ const Form = () => {
   };
 
   return (
-    <div className="formBox">
-      <form onSubmit={onFormSubmit}>
+    <div className={Style.formBox}>
+      <div>
+        <h1>ADD NEW BOOK</h1>
+      </div>
+      <form onSubmit={onFormSubmit} className={Style.form}>
         <input
-          className="titleInput"
+          className={Style.titleInput}
           type="text"
           placeholder="Title"
           value={title}
@@ -50,8 +54,9 @@ const Form = () => {
           onChange={onSetAuthor}
           placeholder="Book author.."
           required
+          className={Style.authorInput}
         />
-        <button type="submit">ADD BOOK</button>
+        <button type="submit" className={Style.formButton}>Add Book</button>
       </form>
     </div>
   );
