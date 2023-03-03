@@ -1,5 +1,5 @@
 .formBox {
-  width: 86rem;
+  width: 90.7%;
   margin: 4% auto;
   background-color: #fff;
   border-radius: 4px;
@@ -18,7 +18,6 @@ h1 {
 
 .form {
   display: flex;
-  flex-wrap: wrap;
   gap: 32px;
 }
 
