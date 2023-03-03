@@ -15,14 +15,10 @@
 }
 
 .nav h1 {
-  margin: 0.375rem 2.938rem 0.125rem 0;
+  /* margin: 0.375rem 2.938rem 0.125rem 0; */
   font-family: "Montserrat", sans-serif;
   font-size: 1.875rem;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: #0290ff;
 }
 
@@ -35,11 +31,18 @@
   width: 6.563rem;
   opacity: 0.5;
   font-family: "Montserrat", sans-serif;
-  font-size: 12px;
+  font-size: 13px;
+  letter-spacing: 1.9px;
   font-weight: normal;
   letter-spacing: 1.9px;
   color: #000;
   text-decoration: none;
+}
+
+.iconContainer {
+  display: flex;
+  justify-self: flex-end;
+  align-items: self-end;
 }
 
 .navIconBtn {
@@ -54,5 +57,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 37.7%;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
 }
