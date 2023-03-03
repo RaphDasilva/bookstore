@@ -13,7 +13,6 @@ const Books = () => {
   }, [dispatch]);
 
   let outPut;
-  if (isLoading) outPut = <h3>Loading...</h3>;
 
   if (books?.length > 0) {
     outPut = books.map((book) => (
@@ -27,16 +26,21 @@ const Books = () => {
   }
 
   if (!isLoading && books?.length === 0) {
-    outPut = <h3>No books to display...</h3>;
+    outPut = (
+      <h3>
+        No Books To Display,
+        Please Add Some Books
+      </h3>
+    );
   }
 
   return (
-    <>
+    <div>
       <div className="allBooks">
         {outPut}
       </div>
       <Form />
-    </>
+    </div>
   );
 };
 
