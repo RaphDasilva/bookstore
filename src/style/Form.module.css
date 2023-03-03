@@ -1,0 +1,61 @@
+.formBox {
+    width: 86rem;
+    margin:   4% auto;
+    background-color: #fff;
+    border-radius: 4px;
+    border-top: 3px solid #e8e8e8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.18px;
+    color: #888;
+  }
+
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .titleInput {
+    width: 40%;
+    font-family: "Montserrat", sans-serif;
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid #e8e8e8;
+    background-color: #fff;
+    font-size: 16px;
+    letter-spacing: -0.15px;
+    color: #121212;
+  }
+
+  .authorInput {
+    width: 28.5%;
+    font-family: "Montserrat", sans-serif;
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid #e8e8e8;
+    background-color: #fff;
+    font-size: 16px;
+    letter-spacing: -0.15px;
+    color: #121212;
+  }
+
+  .formButton {
+    cursor: pointer;
+    width: 20%;
+    padding: 12px;
+    border-radius: 3px;
+    background-color: #0290ff;
+    border: none;
+    letter-spacing: 0.5px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: "Roboto Slab", serif;
+  }
