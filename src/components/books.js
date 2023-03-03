@@ -26,7 +26,12 @@ const Books = () => {
   }
 
   if (!isLoading && books?.length === 0) {
-    outPut = <h3>No books to display...</h3>;
+    outPut = (
+      <h3>
+        No Books To Display,
+        Please Add Some Books
+      </h3>
+    );
   }
 
   return (

@@ -200,3 +200,16 @@
   background-color: #e8e8e8;
   margin: 0 16px;
 }
+
+h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  color: #307bbe;
+}
