@@ -23,7 +23,7 @@
   align-items: center;
   margin: auto;
   margin-top: 3%;
-  width: 75rem;
+  width: 80%;
   height: 10.625rem;
   padding: 2rem 9.188rem 1.625rem 1.688rem;
   border-radius: 4px;
@@ -104,6 +104,7 @@
   align-items: center;
 }
 
+
 .Oval {
   width: 4.25rem;
   height: 4.25rem;
@@ -112,7 +113,6 @@
   border-radius: 50%;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
-  margin-left: 110px;
 }
 
 .percentComplete {
@@ -142,7 +142,7 @@
   display: flex;
   flex-direction: column;
   justify-items: center;
-  margin-right: -38px;
+  margin-right: -3%;
 }
 
 .currentChapter {
