@@ -64,3 +64,27 @@
   align-items: center;
   flex-grow: 1;
 }
+
+@media (max-width: 768px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+
+    /* width: 100%; */
+    height: auto;
+    padding: 1rem 6.188rem 1.688rem 6.25rem;
+    background-color: #fff;
+    border-bottom: solid 1px #e1e1e1;
+  }
+
+  .navContainer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    flex-grow: 1;
+  }
+}

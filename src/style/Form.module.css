@@ -58,3 +58,27 @@ h1 {
   font-weight: 700;
   font-family: "Roboto Slab", serif;
 }
+
+@media (max-width: 768px) {
+  .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .formButton {
+    width: 100%;
+  }
+
+  .authorInput {
+    width: 100%;
+    padding: 12px 0 12px 5px;
+  }
+
+  .titleInput {
+    width: 100%;
+    padding: 12px 0 12px 5px;
+  }
+}

@@ -15,7 +15,7 @@ const Book = (props) => {
   };
   return (
     <div className={style.book}>
-      <div>
+      <div className={style.shift}>
         <div className={style.bookInfo}>
           <div className={style.catss}>Action</div>
           <div className={style.title}>{title}</div>
