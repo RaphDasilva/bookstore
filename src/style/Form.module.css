@@ -67,17 +67,18 @@ h1 {
     flex-direction: column;
     gap: 10px;
   }
+
   .formButton {
     width: 100%;
   }
 
   .authorInput {
     width: 100%;
-    padding: 12px 0px 12px 5px;
+    padding: 12px 0 12px 5px;
   }
 
   .titleInput {
     width: 100%;
-    padding: 12px 0px 12px 5px;
+    padding: 12px 0 12px 5px;
   }
 }
